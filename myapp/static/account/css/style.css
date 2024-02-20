@@ -1,0 +1,134 @@
+body {
+    font-family: 'Duru Sans', sans-serif;
+    /* background-color: rgb(187, 183, 183); */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
+/* {% comment %} /////////////////////////////////////////          //////////////////////////////////////////////// {% endcomment %} */
+
+#header{
+    display: block;
+    display: flex;
+    /* margin: 8px 40px; */
+    list-style: none;
+    /* background-color:  rgb(250, 250, 252); */
+    background-color: white;
+
+    /* position: sticky; */
+} 
+
+.girlboss{
+    padding-top: 0px;
+    padding-left: 4px;
+} 
+
+.mid{
+    margin-left: 210px;
+    padding: 23px 40px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #585656;
+    margin: 0px;
+}
+
+.navbar li a:hover{
+    text-decoration: underline;
+    color: #585656;
+}
+
+.navbar{
+    margin: 0px;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 1px 16px;
+}
+
+
+.icons{
+    /* right: 20px; */
+    padding: 22px;
+} 
+
+.icons{
+    /* right: 20px; */
+    padding: 22px;
+} 
+
+
+
+/* {% comment %} /////////////////////////////////////////          //////////////////////////////////////////////// {% endcomment %} */
+
+.carousel-inner {
+    /* background-color:  rgb(220, 226, 230); */
+    /* background-color:  rgb(229, 235, 240);    */
+    /* background-color:  rgb(236, 239, 241);    */
+    background-color:  rgb(233, 242, 248);   
+
+}
+
+#text {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.btn.btn-medium {
+    padding: 0.8em 2.8em;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+}
+
+
+p {
+    color: rgb(138, 136, 136);
+}    
+/* {% comment %} /////////////////////////////////////////          //////////////////////////////////////////////// {% endcomment %} */
+
+.icon-box a {
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: 0.3s color ease-out;
+}
+
+.container2{
+    margin: 5%;
+}
+
+.container2  span {
+    font-size: 1.5em;
+}    
+
+.container3{
+    margin: 5%;
+}
+
+.container5{
+    margin: 6%;
+}
+
+#carousel-inner1 img{
+    height: 420px;
+}
+
+#subscribe{
+    margin: 90px 0px;
+}
+
+#footer{
+    padding: 4px;
+}
+
+#footer .navbar li a{
+    text-decoration: none;
+    color: #585656;
+}
+
+#footer .social-links i{
+    padding: 0px 10px;
+}

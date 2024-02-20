@@ -1,0 +1,622 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutuja</title>
+    <link rel="stylesheet" href="{% static 'account/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'account/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'account/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+
+    <div id="header"  class="fixed-top">
+        <div class="girlboss">
+          <img style="width:228px; height:80px;"  src="{% static 'account/images/index2.jpg' %}">
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">READ</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">WATCHES</a></li>
+                <li><a href="#">SALE</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">PAGES</a></li>
+                {% comment %} <li><i class="fa-solid fa-circle-chevron-down fa-lg"></i></li> {% endcomment %}
+              </ul>
+        </div>
+        
+        <div class="icons">
+          <a href="{% url 'search' %}" style="color:black"> <i class="fa-solid fa-magnifying-glass fa-lg p-2"></i></a>
+          <i class="fa-solid fa-user fa-lg  p-2"></i>
+          <i class="fa-solid fa-cart-shopping fa-lg p-2"></i>
+        </div>
+    </div>
+    
+    
+{% comment %} /////////////////////////////////////////          //////////////////////////////////////////////// {% endcomment %}
+
+    <div>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">  
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div> 
+          
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row d-flex flex-wrap align-items-center">
+                          <div class="col-md-6 p-4">
+                            <div class="banner-content">
+                              <h1 class="display-2 text-uppercase text-dark pb-5">Technology Hack You Won't Get</h1>
+                              <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
+                            </div>
+                          </div>
+                          <div class="col-md-5  p-4">
+                            <div class="image-holder">
+                              <img src="{% static 'account/images/banner-image2.png' %}" alt="banner">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-md-6">
+                        <div class="banner-content">
+                          <h1 class="display-2 text-uppercase text-dark pb-5">Your Products Are Great.</h1>
+                          <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
+                        </div>
+                      </div>
+                      <div class="col-md-4 p-4">
+                        <div class="image-holder" >
+                            <img  src="{% static 'account/images/banner-image2.png' %}" alt="banner"> 
+                            {% comment %} <img style="width:578px; height:590px;" src="{% static 'account/images/pexels.webp' %}" alt="banner"> {% endcomment %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div> 
+            </div>
+          
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+    </div>
+       
+
+{% comment %} /////////////////////////////////////////          //////////////////////////////////////////////// {% endcomment %}
+
+    <div class="container mt-3 py-3"  >
+      <div class="row">
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div class="icon-box d-flex">
+
+            <div class="icons1">
+              <i class="fa-solid fa-cart-shopping fa-2xl" style="padding: 0px 20px;"></i>
+            </div>
+    
+            <div class="icon-box-content">
+              <h5 class="card-title text-uppercase text-dark">Free delivery</h5>
+              <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+
+        {% comment %} /////////////            ///////////// {% endcomment %}
+        
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div class="icon-box d-flex">
+            
+            <div class="icons1">
+              <i class="fa-solid fa-ranking-star fa-2xl" style="padding: 0px 20px;"></i>
+            </div>
+    
+            <div class="icon-box-content">
+              <h5 class="card-title text-uppercase text-dark">Quality guarantee</h5>
+              <p>Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+            </div>
+          </div>
+        </div>
+
+        {% comment %} /////////////            ///////////// {% endcomment %}
+
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div class="icon-box d-flex">
+            
+            <div class="icons1">
+              <i class="fa-solid fa-tag fa-2xl" style="padding: 0px 20px;"></i>
+            </div>
+    
+            <div class="icon-box-content">
+              <h5 class="card-title text-uppercase text-dark">Daily offers</h5>
+              <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+            </div>
+          </div>
+        </div>
+
+        {% comment %} /////////////            ///////////// {% endcomment %}
+        
+        <div class="col-lg-3 col-md-6 pt-4">
+            <div class="icon-box d-flex">
+            
+              <div class="icons1">
+                <i class="fa-solid fa-shield-plus fa-xl" style="padding: 0px 20px;"></i>
+              </div>
+      
+            <div class="icon-box-content">
+              <h5 class="card-title text-uppercase text-dark">100% secure payment</h5>
+              <p>Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+{% comment %} /////////////////////////////////////////     CONTAINER 2     //////////////////////////////////////////////// {% endcomment %}
+    
+    <div class="container2 mt-3 py-3">
+      <div class="row">
+        <h2 class="display-7 text-dark text-uppercase pb-3">Mobile Products</h2>
+        <div class="col-lg-3 col-md-6">
+          <div class="icon-box">
+            <img style="width:278px; height:360px;" src="{% static 'account/images/product-item1.jpg' %}" alt="banner">
+            <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h5 class="card-title text-uppercase">
+                <a href="#">Iphone 10</a>
+              </h5>
+              <span class="item-price text-primary">$980</span>
+            </div>
+          </div>
+        </div>
+
+        
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="icon-box">
+            
+            <img style="width:278px; height:360px;" src="{% static 'account/images/product-item2.jpg' %}" alt="banner">
+            <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h5 class="card-title text-uppercase">
+                <a href="#">Iphone 11</a>
+              </h5>
+              <span class="item-price text-primary">$1100</span>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-lg-3 col-md-6">
+          <div class="icon-box">
+            
+            <img style="width:278px; height:360px;" src="{% static 'account/images/product-item3.jpg' %}" alt="banner">
+            <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h5 class="card-title text-uppercase">
+                <a href="#">Iphone 8</a>
+              </h5>
+              <span class="item-price text-primary">$700</span>
+            </div>
+          </div>
+        </div>
+
+        
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="icon-box">
+            
+            <img style="width:278px; height:360px;" src="{% static 'account/images/product-item4.jpg' %}" alt="banner">
+            <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h5 class="card-title text-uppercase">
+                <a href="#">Iphone 13</a>
+              </h5>
+              <span class="item-price text-primary">$1500</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+{% comment %} ///////////////////////////////           CONTAINER  3       ////////////////////////// {% endcomment %}
+     
+    <div class="container3 mt-3 py-3">
+      <div class="row">
+        <h2 class="display-7 text-dark text-uppercase pb-3">SMART WATCHES</h2>
+        <div class="col-lg-3 col-md-6">
+          <div class="icon-box">
+            <img style="width:278px; height:360px;" src="{% static 'account/images/product-item6.jpg' %}" alt="banner">
+            <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h5 class="card-title text-uppercase">
+                <a href="#">Iphone 10</a>
+              </h5>
+              <span class="item-price text-primary">$980</span>
+            </div>
+          </div>
+        </div>
+
+        
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="icon-box">
+            
+            <img style="width:278px; height:360px;" src="{% static 'account/images/product-item7.jpg' %}" alt="banner">
+            <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h5 class="card-title text-uppercase">
+                <a href="#">Iphone 11</a>
+              </h5>
+              <span class="item-price text-primary">$1100</span>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-lg-3 col-md-6">
+          <div class="icon-box">
+            
+            <img style="width:278px; height:360px;" src="{% static 'account/images/product-item8.jpg' %}" alt="banner">
+            <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h5 class="card-title text-uppercase">
+                <a href="#">Iphone 8</a>
+              </h5>
+              <span class="item-price text-primary">$700</span>
+            </div>
+          </div>
+        </div>
+
+        
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="icon-box">
+            
+            <img style="width:278px; height:360px;" src="{% static 'account/images/product-item9.jpg' %}" alt="banner">
+            <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h5 class="card-title text-uppercase">
+                <a href="#">Iphone 13</a>
+              </h5>
+              <span class="item-price text-primary">$1500</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+{% comment %} ///////////////////////////////      carousel            ////////////////////////// {% endcomment %}
+
+
+        <div id="container5" class="carousel slide" data-bs-ride="carousel">  
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row d-flex flex-wrap align-items-center">
+                          <div class="col-md-5 p-4">
+                            <div class="banner-content">
+                              <p class="display-2 text-uppercase text-dark pb-1">10% off</p>
+                              <h4 class="display-2  text-dark pb-1">NEW YEAR SALE</h4>
+                              <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
+                            </div>
+                          </div>
+                          <div class="col-md-7">
+                            <div class="image-holder">
+                              <img style="width:698px; height:540px;" src="{% static 'account/images/photo.jpg' %}" alt="banner">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls/icons -->
+          </div>
+        </div> 
+        
+       
+
+{% comment %} ///////////////////////////////      container 4            ////////////////////////// {% endcomment %}
+
+
+        <div class="container5 mt-4 py-3">
+          <div class="row">
+            <h2 class="display-7 text-dark text-uppercase pb-3">LATEST POSTS</h2>
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                <img style="width:358px; height:260px;" src="{% static 'account/images/post-item1.jpg' %}" alt="banner">
+                <div class="card-body text-uppercase pt-3">
+                  <div class="card-meta text-muted">
+                    <span class="meta-date">feb 22, 2023</span>
+                    <span class="meta-category">- Gadgets</span>
+                  </div>
+                  <h5 class="card-title">
+                    <a href="#">Get some cool gadgets in 2023</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+    
+            
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                
+                <img style="width:358px; height:260px;" src="{% static 'account/images/post-item2.jpg' %}" alt="banner">
+                <div class="card-body text-uppercase pt-3">
+                  <div class="card-meta text-muted">
+                    <span class="meta-date">feb 25, 2023</span>
+                    <span class="meta-category">- Technology</span>
+                  </div>
+                  <h5 class="card-title">
+                    <a href="#">Technology Hack You Won't Get</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+    
+              
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                
+                <img style="width:358px; height:260px;" src="{% static 'account/images/post-item3.jpg' %}" alt="banner">
+                <div class="card-body text-uppercase pt-3">
+                  <div class="card-meta text-muted">
+                    <span class="meta-date">feb 22, 2023</span>
+                    <span class="meta-category">- Camera</span>
+                  </div>
+                  <h5 class="card-title">
+                    <a href="#">Top 10 Small Camera In The World</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>  
+
+{% comment %}   ///////////////////////           Question       ///////////////////////////////////////////     {% endcomment %}
+
+       
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        {% comment %} <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> {% endcomment %}
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img  style="width:100%; height:400px;" src="{% static 'account/images/background.avif' %}"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block pb-2">
+              <img style="width:200px; height:190px;" src="{% static 'account/images/question.png' %}" alt="...">
+              <h3>“A blog is a digital publication that can complement a website or exist independently. A blog may include articles, short posts, listicles, infographics, videos, and other digital content.”</h3>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img style="width:100%; height:400px;" src="{% static 'account/images/background.avif' %}"  class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block pb-2">
+              <img style="width:200px; height:190px;" src="{% static 'account/images/question.png' %}" alt="...">
+              <h3>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”</h3>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+{% comment %}   ///////////////////////           Question       ///////////////////////////////////////////     {% endcomment %}
+
+      <section id="subscribe" class="container-grid padding-large position-relative overflow-hidden">
+        <div class="container">
+          <div class="row">
+            <div class="subscribe-content bg-dark d-flex flex-wrap justify-content-center align-items-center padding-medium" style="height: 180px;">
+              <div class="col-md-6 col-sm-12">
+                <div class="display-header pe-3">
+                  <h2 class="display-7 text-uppercase text-light">Subscribe Us Now</h2>
+                  <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <form class="subscription-form validate">
+                  <div class="input-group flex-wrap">
+                    <input class="form-control btn-rounded-none" type="email" name="EMAIL" placeholder="Your email address here" required="">
+                    <button class="btn btn-medium btn-primary text-uppercase btn-rounded-none" type="submit" name="subscribe">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+{% comment %}   ///////////////////////               INSTAGRAM         ///////////////////////////////////////////     {% endcomment %}
+
+          
+          <section id="instagram" class="padding-large overflow-hidden no-padding-top p-2">
+            <div class="container">
+              <div class="row">
+                <div class="display-header text-uppercase text-dark text-center pb-3">
+                  <h2 class="display-7 pb-2">Shop Our Insta</h2>
+                </div>
+                <div class="d-flex flex-wrap" style="padding-left: 25px;">
+                  <figure class="instagram-item pe-2">
+                    <a href="https://templatesjungle.com/" class="image-link position-relative">
+                      <img style="width:210px; height:250px;" src="{% static 'account/images/insta-item1.jpg' %}" alt="instagram" class="insta-image">
+                      <div class="icon-overlay position-absolute d-flex justify-content-center">
+                        <svg class="instagram">
+                          <use xlink:href="#instagram"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </figure>
+                  <figure class="instagram-item pe-2">
+                    <a href="https://templatesjungle.com/" class="image-link position-relative">
+                      <img style="width:210px; height:250px;" src="{% static 'account/images/insta-item2.jpg' %}" alt="instagram" class="insta-image">
+                      <div class="icon-overlay position-absolute d-flex justify-content-center">
+                        <svg class="instagram">
+                          <use xlink:href="#instagram"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </figure>
+                  <figure class="instagram-item pe-2">
+                    <a href="https://templatesjungle.com/" class="image-link position-relative">
+                      <img style="width:210px; height:250px;" src="{% static 'account/images/insta-item3.jpg' %}" alt="instagram" class="insta-image">
+                      <div class="icon-overlay position-absolute d-flex justify-content-center">
+                        <svg class="instagram">
+                          <use xlink:href="#instagram"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </figure>
+                  <figure class="instagram-item pe-2">
+                    <a href="https://templatesjungle.com/" class="image-link position-relative">
+                      <img style="width:210px; height:250px;" src="{% static 'account/images/insta-item4.jpg' %}" alt="instagram" class="insta-image">
+                      <div class="icon-overlay position-absolute d-flex justify-content-center">
+                        <svg class="instagram">
+                          <use xlink:href="#instagram"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </figure>
+                  <figure class="instagram-item pe-2">
+                    <a href="https://templatesjungle.com/" class="image-link position-relative">
+                      <img style="width:210px; height:250px;" src="{% static 'account/images/insta-item5.jpg' %}" alt="instagram" class="insta-image">
+                      <div class="icon-overlay position-absolute d-flex justify-content-center">
+                        <svg class="instagram">
+                          <use xlink:href="#instagram"></use>
+                        </svg>
+                      </div>
+                    </a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr>
+
+
+
+
+          <footer id="footer" class="overflow-hidden  mt-5 p-3">
+            <div class="container">
+              <div class="row">
+                <div class="footer-top-area">
+                  <div class="row d-flex flex-wrap justify-content-between">
+                    <div class="col-lg-3 col-sm-6 pb-3">
+                      <div class="footer-menu">
+                        <img style="width:228px; height:80px;"  src="{% static 'account/images/index2.jpg' %}">
+                        <p>If you've enjoyed using our product, we invite you to place an order on our website: www.rutuja.com. Your support means a lot to us, and we look forward to serving you again.</p>
+                        <div class="social-links">
+                          <ul class="d-flex list-unstyled">
+                            <i class="fa-brands fa-facebook fa-2xl" style="padding-right:20px; color: gray;"></i>
+                            <i class="fa-brands fa-instagram fa-2xl" style="padding: 0px 15px; color: gray;"></i>
+                            <i class="fa-brands fa-twitter fa-2xl"  style="padding: 0px 15px; color: gray;"></i>
+                            <i class="fa-brands fa-linkedin fa-2xl" style="padding: 0px 15px;color: gray;"></i>
+                            <i class="fa-brands fa-youtube fa-2xl" style="padding: 0px 15px; color: gray;"></i>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 pb-3">
+                      <div class="footer-menu text-uppercase">
+                        <h5 class="widget-title pb-2">Quick Links</h5>
+                        <ul class="menu-list list-unstyled text-uppercase">
+                          <li class="menu-item pb-2" >
+                            <a style="text-decoration: none; color: black;" href="#">Home</a>
+                          </li>
+                          <li class="menu-item pb-2">
+                            <a style="text-decoration: none; color: black;" href="#">About</a>
+                          </li>
+                          <li class="menu-item pb-2">
+                            <a style="text-decoration: none; color: black;" href="#">Shop</a>
+                          </li>
+                          <li class="menu-item pb-2">
+                            <a style="text-decoration: none; color: black;"  href="#">Blogs</a>
+                          </li>
+                          <li class="menu-item pb-2">
+                            <a style="text-decoration: none; color: black;" href="#">Contact</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 pb-3">
+                      <div class="footer-menu text-uppercase">
+                        <h5 class="widget-title pb-2">Help &amp; Info Help</h5>
+                        <ul class="menu-list list-unstyled">
+                          <li class="menu-item pb-2">
+                            <a style="text-decoration: none; color: black;" href="#">Track Your Order</a>
+                          </li>
+                          <li class="menu-item pb-2">
+                            <a style="text-decoration: none; color: black;" href="#">Returns Policies</a>
+                          </li>
+                          <li class="menu-item pb-2">
+                            <a style="text-decoration: none; color: black;" href="#">Shipping + Delivery</a>
+                          </li>
+                          <li class="menu-item pb-2">
+                            <a style="text-decoration: none; color: black;" href="#">Contact Us</a>
+                          </li>
+                          <li class="menu-item pb-2">
+                            <a style="text-decoration: none; color: black;" href="#">Faqs</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 pb-3">
+                      <div class="footer-menu contact-item">
+                        <h5 class="widget-title text-uppercase pb-2">Contact Us</h5>
+                        <p>Do you have any queries or suggestions? <a href="mailto:" class="text-dark">rutuja.kaldate51@gmail.com</a>
+                        </p>
+                        <p>If you need support? Just give us a call. <a href="" class="text-dark ">8956575600</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </footer>
+  
+     
+
+      
+    <script src="{% static 'account/js/jquery.js' %}"></script>
+    <script src="{% static 'account/js/popper.js' %}"></script>
+    <script src="{% static 'account/js/all.min.js' %}"></script>
+    <script src="{% static 'account/js/bootstrap.min.js' %}"></script>
+
+
+
+
+</body>
+</html>
+
+
